@@ -1,15 +1,17 @@
+import styles from "../../../styles/Hello.module.css";
+
 // pages/posts/[id].js
 
 function Post({ post }: any) {
   // Render post...
   return (
-    <>
-      <h2>Eg - StaticPaths</h2>
+    <div className={styles.hello}>
+      <h2>Eg - Static Paths</h2>
       <p>URL: `/fetch/getStaticPaths/[postId]`</p>
-      <li>
+      <li style={{ listStyle: "none" }}>
         {post.id} - {post.title} ({post.author})
       </li>
-    </>
+    </div>
   );
 }
 

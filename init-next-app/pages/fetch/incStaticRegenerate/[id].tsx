@@ -1,25 +1,26 @@
 import React from "react";
+import styles from "../../../styles/Hello.module.css";
 
-const PostList = (prop: any) => {
+function PostList(prop: any) {
   return (
     <ul>
       {prop?.post?.map((p: any) => (
-        <li>
+        <li style={{ listStyle: "none" }}>
           {p.id} - {p.title} ({p.author})
         </li>
       ))}
     </ul>
   );
-};
+}
 
 function Posts({ posts }: any) {
   // Render data...
   return (
-    <>
+    <div className={styles.hello}>
       <h2>Eg - Incremental Static Regenerate</h2>
       <p>URL: `/fetch/incStaticRegenerate/[postId]`</p>
       <PostList post={posts} />
-    </>
+    </div>
   );
 }
 

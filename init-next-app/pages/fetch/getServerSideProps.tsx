@@ -1,25 +1,26 @@
 import React from "react";
+import styles from "../../styles/Hello.module.css";
 
-const PostList = (prop: any) => {
+function PostList(prop: any) {
   return (
     <ul>
       {prop?.post?.map((p: any) => (
-        <li>
+        <li style={{ listStyle: "none" }}>
           {p.id} - {p.title} ({p.author})
         </li>
       ))}
     </ul>
   );
-};
+}
 
 function Posts({ data }: any) {
   // Render data...
   return (
-    <>
-      <h2>Eg - ServerSideProps</h2>
+    <div className={styles.hello}>
+      <h2>Eg - Server Side Props</h2>
       <p>URL: `/fetch/getServerSideProps`</p>
       <PostList post={data} />
-    </>
+    </div>
   );
 }
 
