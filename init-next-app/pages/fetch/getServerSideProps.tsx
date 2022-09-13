@@ -4,8 +4,8 @@ import styles from "../../styles/Hello.module.css";
 function PostList(prop: any) {
   return (
     <ul>
-      {prop?.post?.map((p: any) => (
-        <li style={{ listStyle: "none" }}>
+      {prop?.post?.map((p: any, idx: number) => (
+        <li key={idx} style={{ listStyle: "none" }}>
           {p.id} - {p.title} ({p.author})
         </li>
       ))}

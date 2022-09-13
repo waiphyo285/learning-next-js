@@ -1,9 +1,11 @@
+import styles from "../styles/Hello.module.css";
+
 function Home() {
   return (
-    <>
-      <h2>Eg - About Page</h2>
+    <div className={styles.hello}>
+      <h2>Eg - Home Page</h2>
       <p>URL: `/home`</p>
-    </>
+    </div>
   );
 }
 

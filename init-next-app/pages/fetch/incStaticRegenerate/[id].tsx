@@ -4,8 +4,8 @@ import styles from "../../../styles/Hello.module.css";
 function PostList(prop: any) {
   return (
     <ul>
-      {prop?.post?.map((p: any) => (
-        <li style={{ listStyle: "none" }}>
+      {prop?.post?.map((p: any, idx: number) => (
+        <li key={idx} style={{ listStyle: "none" }}>
           {p.id} - {p.title} ({p.author})
         </li>
       ))}
@@ -61,7 +61,7 @@ export async function getStaticPaths() {
   // We'll pre-render only these paths at build time.
   // { fallback: blocking } will server-render pages
   // on-demand if the path doesn't exist.
-  return { paths, fallback: "blocking" };
+  return { paths, fallback: false };
 }
 
 export default Posts;
