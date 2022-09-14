@@ -1,0 +1,7 @@
+.hello {
+    min-height: 100vh;
+    padding: 60px;
+    /* color: #f5f5f5;
+    background: #303030; */
+    transition: 100ms ease-in background;
+}
