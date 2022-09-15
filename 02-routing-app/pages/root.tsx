@@ -98,6 +98,18 @@ function Root() {
             </li>
           </ol>
         </ol>
+        <li>Routing</li>
+        <ol>
+          <li>
+            <a href="/dynamicRouting/1">Dynamic Routing</a>
+          </li>
+          <li>
+            <a href="/imperativeRouting">Imperative Routing</a>
+          </li>
+          <li>
+            <a href="/shallowRouting">Shallow Routing</a>
+          </li>
+        </ol>
       </ol>
     </div>
   );
