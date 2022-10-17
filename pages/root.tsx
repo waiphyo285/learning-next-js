@@ -101,13 +101,13 @@ function Root() {
         <li>Routing</li>
         <ol>
           <li>
-            <a href="/dynamicRouting/1">Dynamic Routing</a>
+            <Link href="/dynamicRouting/1">Dynamic Routing</Link>
           </li>
           <li>
-            <a href="/imperativeRouting">Imperative Routing</a>
+            <Link href="/imperativeRouting">Imperative Routing</Link>
           </li>
           <li>
-            <a href="/shallowRouting">Shallow Routing</a>
+            <Link href="/shallowRouting">Shallow Routing</Link>
           </li>
         </ol>
       </ol>

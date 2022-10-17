@@ -49,8 +49,8 @@ function Shallow({ initialPropsCounter }: any) {
       <hr />
 
       <div>
-        <p>getServerSideProps ran for "{initialPropsCounter}" times.</p>
-        <p>Change State Counter: "{query.counter || 0}".</p>
+        <p>getServerSideProps ran for &ldquo;{initialPropsCounter}&ldquo; times.</p>
+        <p>Change State Counter: &ldquo;{query.counter || 0}&ldquo;.</p>
       </div>
     </div>
   );
